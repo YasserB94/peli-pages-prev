@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café De Pelikaan</title>
+    
+
+    
+    <script type="module" crossorigin src="/assets/index-6a2035e2.js"></script>
+    <link rel="stylesheet" href="/assets/index-4bda98fc.css">
+  </head>
+
+  <body class="">
+    <header id="header" class="h-20 z-50 fixed top-0 left-0 right-0 py-4">
+      <!-- header bg -->
+      <div id="header-bg" class="absolute inset-0 -z-10 bg-secondary-500"></div>
+      <div class="container h-full">
+        <div class="flex items-center justify-between h-full">
+          <div
+            id="header-logo"
+            class="text-secondary-500 font-pacifico text-2xl lg:text-4xl z-50"
+          >
+            <p class="select-none">
+              <span>C</span><span>a</span><span>f</span><span>é</span
+              ><span> </span><span>P</span><span>e</span><span>l</span
+              ><span>i</span><span>k</span><span>a</span><span>a</span
+              ><span>n</span>
+            </p>
+          </div>
+          <!-- burger -->
+          <button
+            id="header-burger"
+            class="lg:hidden w-10 h-10 group active:scale-90 ease-out space-y-2"
+            aria-label="toggle the navigation menu"
+          >
+            <span
+              class="block h-1 bg-secondary-500 rounded motion-safe:transition-all motion-safe:duration-500 ease-in"
+            ></span
+            ><span
+              class="block h-1 bg-secondary-500 rounded motion-safe:transition-all motion-safe:duration-75 origin-center ease-in-out"
+            ></span
+            ><span
+              class="block h-1 bg-secondary-500 rounded motion-safe:transition-all motion-safe:duration-500 ease-out"
+            ></span>
+          </button>
+          <!-- NAV -->
+          <div class="hidden lg:block">
+            <nav aria-label="primary menu" id="header-nav">
+              <ul class="flex gap-2">
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 text-secondary-500 font-nunito text-2xl"
+                    >Over ons</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 text-secondary-500 font-nunito text-2xl"
+                    >Menu</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 text-secondary-500 font-nunito text-2xl"
+                    >Events</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 text-secondary-500 font-nunito text-2xl"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="px-2 py-1 text-secondary-500 font-nunito text-2xl"
+                    >Wielervrienden</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- START MOBILE NAV -->
+    <div id="mobile-nav" class="fixed z-40 inset-0 w-full h-screen">
+      <div class="mt-40 container static">
+        <nav
+          aria-label="mobile navigation menu"
+          class="w-10/12 max-w-lg mx-auto bg-transparent p-8"
+        >
+          <ul class="flex flex-col items-center gap-2">
+            <li>
+              <a
+                href="#"
+                class="font-bold text-accent-600 text-2xl block py-3 px-2 uppercase"
+                >Over ons</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-accent-600 text-2xl block py-3 px-2 uppercase"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-accent-600 text-2xl block py-3 px-2 uppercase"
+                >Events</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-accent-600 text-2xl block py-3 px-2 uppercase"
+                >Contact</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="font-bold text-accent-600 text-2xl block py-3 px-2 uppercase"
+                >Wielervrienden</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <p class="text-xl font-pacifico text-muted text-center">Volg ons</p>
+        <div class="flex mx-auto items-center justify-center gap-8">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            class="fill-accent-600 w-12 h-12"
+          >
+            <path
+              d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+            />
+          </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 48 48"
+            class="fill-accent-600 h-12 w-12"
+          >
+            <path
+              d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+            />
+          </svg>
+        </div>
+        <div
+          id="mobile-nav-bg"
+          class="absolute inset-0 h-full w-full -z-10"
+        ></div>
+      </div>
+      <!-- END MOBILE NAV -->
+    </div>
+    <!-- START HERO -->
+    <section class="relative grid place-items-center h-screen z-0">
+      <div class="container">
+        <div
+          class="grid grid-cols-2 gap-10 place-items-center max-w-md w-10/12 mx-auto"
+        >
+          <div
+            class="max-w-4xl col-span-2 text-center text-4xl font-semibold text-secondary-500 backdrop-blur-sm backdrop-brightness-90 shadow-inner rounded-3xl"
+          >
+            <p class="">Frisse pintjes<span class="text-accent-500">,</span></p>
+            <p class="">Straffe koffie<span class="text-accent-500">,</span></p>
+            <p class="">Warme sfeer<span class="text-accent-500">.</span></p>
+          </div>
+          <button class="btn-primary w-full max-w-xs">Menu</button>
+          <button class="btn-primary w-full max-w-xs">Contact</button>
+        </div>
+      </div>
+      <!-- Hero Image Home -->
+      <img
+        src="/assets/hero-0589923c.jpg"
+        alt=""
+        class="absolute brightness-50 object-center w-full h-full left-1/2 top-1/2 object-cover -translate-x-1/2 -translate-y-1/2 -z-50"
+      />
+      <a
+        href="#intro"
+        id="scroll--arrows--container"
+        class="absolute bottom-0 pb-10"
+      >
+        <span
+          class="w-4 md:w-6 lg:w-8 xl:w-10 2xl:w-12 aspect-square block rotate-45 border-secondary-500 border-b-2 border-r-2 rounded-tr rounded-bl animate-fade translate-y-2.5"
+        ></span>
+        <span
+          class="w-4 md:w-6 lg:w-8 xl:w-10 2xl:w-12 aspect-square block rotate-45 border-secondary-500 border-b-2 border-r-2 rounded-tr rounded-bl animate-fade1"
+        ></span
+        ><span
+          class="w-4 md:w-6 lg:w-8 xl:w-10 2xl:w-12 aspect-square block rotate-45 border-secondary-500 border-b-2 border-r-2 rounded-tr rounded-bl animate-fade2 -translate-y-2.5"
+        ></span>
+      </a>
+    </section>
+    <!-- END HERO -->
+    <!-- IntroCard -->
+    <section id="intro" class="">
+      <div class="container">
+        <div
+          class="border--sketchy bg-opacity-70 max-w-2xl flex flex-col gap-3 text-center mx-auto bg-white px-8 py-10 xl:py-12"
+        >
+          <h2 class="text-accent-900 text-xl lg:text-2xl font-bold font-serif">
+            Welkom in <br />
+            <span class="font-pacifico text-2xl lg:text-4xl">
+              De <span class="text-highlight">Pelikaan</span></span
+            >
+          </h2>
+          <p class="text-muted max-w-md mx-auto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            dolor repudiandae tempora optio ducimus atque possimus fuga sint
+            commodi earum voluptates, ab unde sed laboriosam quo placeat odit
+            facere maxime similique eum cumque quaerat esse. Laudantium
+            laboriosam maxime magni quod officiis, corrupti, enim quaerat
+            dolorum fuga, sed iure! Quas, sit.
+          </p>
+          <a href="#oo" class="btn-primary w-1/2 mx-auto">Over ons</a>
+        </div>
+      </div>
+    </section>
+<!-- menu -->
+    <section id="menu" class="container overflow-x-clip">
+      <div class="mx-auto w-fit md:mx-0">
+        <h2
+          class="bg-accent-400 rounded font-bold font-pacifico text-2xl text-center text-secondary-500 p-4 py-5 mb-4 border border-muted"
+        >
+          Van 't Vat
+        </h2>
+      </div>
+      <div class="my-10">
+        <!-- Slider main container -->
+        <div
+          class="swiper w-96 max-w-md lg:max-w-none h-[420px] lg:w-full my-2"
+        >
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper flex max-h-full lg:w-full h-full">
+            <!-- Slides -->
+            <!-- Cristal -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/cristal-51176c1a.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Cristal</h3>
+                  <p class="text-muted font-serif text-center px-4">Hoppige pils met een crispy toets,aangename bittere smaak van de nobele Saaz hop. Karaktervol met een mooie schuimkraag.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Rodenbach -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40  rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/rodenbach-e0f96585.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Rodenbach</h3>
+                  <p class="text-muted font-serif text-center px-4">het origineel Vlaams Rood Bruin bier. Zacht zuur van smaak met een unieke fruitigheid dankzij gemiddeld 6 maanden rijping op eikenhouten foeders.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Mort Subite -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/kriek-2bcfd0e2.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Mort Subite</h3>
+                  <p class="text-muted font-serif text-center px-4">Sterk fruitige smaak die uitmondt in het typische zuurtje van de Belgische krieken.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Bol -->
+            <div class="swiper-slide h-full bg-white bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/bolleke-2e5c28ba.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Bolleke</h3>
+                  <p class="text-muted font-serif text-center px-4">Hét bier van Antwerpen, Toffee, kastanje en karamel gekroond door een romige schuimkraag</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chouffe -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/chouffe-bd38d494.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">La Chouffe</h3>
+                  <p class="text-muted font-serif text-center px-4">Citrustonen in de mond, gevolgd door een verfrissende, aangenaam kruidige toets die het geheel een grote lichtheid geeft</p>
+                </div>
+              </div>
+            </div>
+            <!-- Anvers -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/anvers-ff513c7b.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Tripel d'Anvers</h3>
+                  <p class="text-muted font-serif text-center px-4">Frisse lichtzoete smaak met sprankelende toetsen, een kruidig aroma en subtiele hints van sinaasappelschil en korriander.</p>
+                </div>
+              </div>
+            </div>
+            <!-- Affligem -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/affligem-126fb338.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Affligem Blond</h3>
+                  <p class="text-muted font-serif text-center px-4">Mild bitter ondersteund met zachte fruitigheid gekroond door een stevige schuimkraag</p>
+                </div>
+              </div>
+            </div>
+            <!-- Jack -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/jack-92c066ff.webp" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Jack's Precious ipa</h3>
+                  <p class="text-muted font-serif text-center px-4">Karakter van een floraal boeket met citrusaccenten, zacht fruitig en romig. Milde bloemige bitterheid</p>
+                </div>
+              </div>
+            </div>
+            <!-- Chimay -->
+            <div class="swiper-slide h-full bg-white bg-opacity-80 lg:bg-opacity-40 rounded-xl relative overflow-clip">
+              <img loading="lazy" src="/assets/chimay-9af7d99a.png" class="absolute h-[100%] left-0 right-0 w-full -translate-y-1/4 object-cover" alt="">
+              <div class="absolute h-1/2 top-1/2 w-full  z-10 rounded-t-2xl"></div>
+              <div class="z-20 h-1/2 absolute top-1/2 w-full backdrop-blur-xl rounded-t-2xl overflow-clip">
+                <div class="w-full h-full flex flex-col justify-start items-center">
+                  <h3 class="text-secondary-500 mb-4 font-pacifico text-2xl bg-accent-400 py-4 w-full text-center">Chimay Blauw</h3>
+                  <p class="text-muted font-serif text-center px-4">Van romige karamel naar zacht mokka gepaard met levendige kruidigheid. Tot gekonfijt fruit</p>
+                </div>
+              </div>
+            </div>
+
+          <!-- If we need pagination -->
+          <div class="swiper-pagination !-bottom-8"></div>
+        </div>
+      </div>
+      <a href="#" class="block mt-10 mx-auto btn-primary w-fit lg:hidden">Ontdek ons hele menu</a>
+      <div class="w-full hidden lg:flex justify-center lg:justify-between gap-4 mt-8">
+        <button id="desk-prev-btn"  class="disabled:opacity-5 text-accent-500 rounded-full text-4xl aspect-square grid">&#8592;</button>
+        <a href="#" class="btn-primary w-fit">Ontdek ons hele menu</a>
+        <button id="desk-next-btn"  class="disabled:opacity-5 text-accent-500 rounded-full text-4xl aspect-square grid">&#8594;</button>
+      </div>
+
+    </section>
+<!-- contact -->
+<section id="contact">
+<div class="container">
+  <div class="mx-auto w-fit md:mx-0">
+    <h2
+      class="bg-accent-400 rounded font-bold font-pacifico text-2xl text-center text-secondary-500 p-4 py-5 mb-4 border border-muted"
+    >Contact</h2>
+  </div>
+<div class="grid place-items-center grid-cols-1 lg:grid-cols-2 gap-8 max-w-xl mx-auto">
+  <div class="flex flex-col items-center text-center max-w-xs mx-auto border border-accent-400 rounded-xl overflow-clip p-4 bg-white bg-opacity-25">
+    <h3 class="font-pacifico  text-xl mb-4 bg-accent-400 w-full p-4 text-secondary-500 border border-muted">Openingsuren</h3>
+    <table aria-describedby="Openingsuren" class="text-right text-muted w-full">
+      <tr class="flex gap-4 w-full justify-between"><th>Maandag</th><td>09:00-01:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Dinsdag</th><td>09:00-01:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Woensdag</th><td>09:00-01:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Donderdag</th><td>09:00-01:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Vrijdag</th><td>09:00-03:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Zaterdag</th><td>09:00-03:00</td></tr>
+      <tr class="flex gap-4 w-full justify-between"><th>Zondag</th><td>10:00-00:00</td></tr>
+    </table>
+  </div>
+  <div class="grid gap-8 place-items-center">
+    <p class="text-xl font-pacifico text-muted text-center">Volg ons</p>
+    <div class="flex mx-auto items-center justify-center gap-8">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        class="fill-accent-600 w-12 h-12"
+      >
+        <path
+          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+        />
+      </svg>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        class="fill-accent-600 h-12 w-12"
+      >
+        <path
+          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+        />
+      </svg>
+
+    </div>
+    <div class="flex flex-col justify-center items-center gap-2">
+      <p class="text-lg font-bold">Tel: 04/12.34.12.34</p>
+      <p class="text-lg font-bold">Email: peli@peliland.kaan</p>
+      <a href="#" class="btn-primary">Contact</a>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+  </body>
+</html>
